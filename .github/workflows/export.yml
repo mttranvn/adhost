@@ -1,45 +1,39 @@
-name: Export Cloudflare Gateway Lists
+name: Export Lists to my-blocklist.txt
 
 on:
   schedule:
-    - cron: "0 16 * * 0"  # 23:00 Chủ nhật hàng tuần (UTC+7)
+    - cron: '30 23 * * 0'  # Chủ nhật 23:00 (GMT+7)
   workflow_dispatch:
 
 jobs:
   export:
-    name: Export Lists to my-blocklist.txt
     runs-on: ubuntu-latest
 
+    # Cho phép ghi vào repo bằng GITHUB_TOKEN
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout repository
+      - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: pip install requests
 
-      - name: Run export_blocklist.py
+      - name: 🚀 Run export script
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
         run: python export_blocklist.py
 
-      - name: Commit and push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 💾 Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Tạo nhánh main nếu đang ở detached HEAD
-          git branch | grep "main" || git checkout -b main
-          git checkout main || true
-
           git add my-blocklist.txt logs/list_details.log || true
-          git diff --cached --quiet && echo "✅ Nothing to commit" && exit 0
-
-          git commit -m "🔄 Update my-blocklist.txt and logs [auto]"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
+          git commit -m "🔄 Update my-blocklist.txt and logs [auto]" || echo "No changes to commit"
+          git push origin main
