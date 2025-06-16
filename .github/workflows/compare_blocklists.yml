@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+env:
+  OUTPUT_FILE: diff_from_merged.txt
+  LOG_FILE: logs/compare_details.log
+
 jobs:
   compare:
     runs-on: ubuntu-latest
@@ -20,16 +24,18 @@ jobs:
       - name: So sánh và tạo danh sách khác biệt
         run: |
           mkdir -p logs
+          echo "📋 So sánh merged_blocklist.txt và my-blocklist.txt" > ${{ env.LOG_FILE }}
 
           if [[ -f merged_blocklist.txt && -f my-blocklist.txt ]]; then
             sort merged_blocklist.txt > sorted_merged.txt
             sort my-blocklist.txt > sorted_my.txt
 
-            comm -23 sorted_merged.txt sorted_my.txt > diff_from_merged.txt
+            comm -23 sorted_merged.txt sorted_my.txt > ${{ env.OUTPUT_FILE }}
+            COUNT=$(wc -l < ${{ env.OUTPUT_FILE }})
 
-            echo "✅ Đã tìm thấy $(wc -l < diff_from_merged.txt) domain chỉ có trong merged_blocklist.txt"
+            echo "✅ Đã tìm thấy $COUNT domain chỉ có trong merged_blocklist.txt" | tee -a ${{ env.LOG_FILE }}
           else
-            echo "❌ Một trong hai file chưa tồn tại. Kiểm tra lại merge/export."
+            echo "❌ Một trong hai file chưa tồn tại." | tee -a ${{ env.LOG_FILE }}
             exit 1
           fi
 
@@ -37,6 +43,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add diff_from_merged.txt
-          git commit -m "🆕 Tự động tạo diff_from_merged.txt sau khi merge"
+          git add ${{ env.OUTPUT_FILE }} ${{ env.LOG_FILE }}
+          git commit -m "🆕 So sánh & log domain khác biệt sau khi merge"
           git push || echo "⚠️ Không có thay đổi để commit"
