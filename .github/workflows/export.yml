@@ -2,7 +2,7 @@ name: Export Cloudflare Gateway Lists
 
 on:
   schedule:
-    - cron: "30 23 * * 0"  # 23:00 Chủ nhật hàng tuần (giờ Việt Nam UTC+7)
+    - cron: "0 16 * * 0"  # 23:00 Chủ nhật hàng tuần (UTC+7)
   workflow_dispatch:
 
 jobs:
@@ -33,7 +33,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Tạo nhánh main nếu đang ở detached HEAD
+          git branch | grep "main" || git checkout -b main
+          git checkout main || true
+
           git add my-blocklist.txt logs/list_details.log || true
           git diff --cached --quiet && echo "✅ Nothing to commit" && exit 0
+
           git commit -m "🔄 Update my-blocklist.txt and logs [auto]"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
