@@ -2,10 +2,10 @@ name: Merge Blocklists
 
 on:
   workflow_run:
-    workflows: ["Export Lists to my-blocklist.txt"]  # Chạy sau khi export.yml hoàn tất
+    workflows: ["Export Lists to my-blocklist.txt"]
     types:
       - completed
-  workflow_dispatch:  # Cho phép chạy tay nếu cần
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -37,7 +37,8 @@ jobs:
 
           echo "📥 Bắt đầu hợp nhất từ NGUON_URLS..." >> ${{ env.LOG_FILE }}
 
-          echo "${{ vars.NGUON_URLS }}" | tr -d '\r' | while IFS= read -r url; do
+          IFS=$'\n'
+          for url in ${{ vars.NGUON_URLS }}; do
             echo "🔗 Đang xử lý: $url" >> ${{ env.LOG_FILE }}
             curl -s "$url" | grep -E '^(0\.0\.0\.0|127\.0\.0\.1)[[:space:]]+[^# ]+' | awk '{print $2}' >> temp_hosts.txt || echo "❌ Lỗi tải $url" >> ${{ env.LOG_FILE }}
           done
