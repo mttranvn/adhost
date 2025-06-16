@@ -2,8 +2,8 @@ name: Export Cloudflare Gateway Lists
 
 on:
   schedule:
-    - cron: "30 23 * * 0" # 23:00 Chủ nhật hàng tuần (UTC+7)
-  workflow_dispatch:     # Cho phép chạy thủ công nếu cần
+    - cron: "30 23 * * 0"  # 23:00 Chủ nhật hàng tuần (giờ Việt Nam UTC+7)
+  workflow_dispatch:
 
 jobs:
   export:
@@ -22,15 +22,18 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run export script
+      - name: Run export_blocklist.py
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
         run: python export_blocklist.py
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add my-blocklist.txt logs/list_details.log
-          git commit -m "🔄 Update my-blocklist.txt and logs [auto]" || echo "No changes to commit"
-          git push
+          git add my-blocklist.txt logs/list_details.log || true
+          git diff --cached --quiet && echo "✅ Nothing to commit" && exit 0
+          git commit -m "🔄 Update my-blocklist.txt and logs [auto]"
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
