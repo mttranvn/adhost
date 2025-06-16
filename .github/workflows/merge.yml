@@ -2,39 +2,54 @@ name: Merge Blocklists
 
 on:
   workflow_run:
-    workflows: ["Export Lists"]
+    workflows: ["Export Lists to my-blocklist.txt"]
     types:
       - completed
   workflow_dispatch:
 
-jobs:
-  merge-blocklists:
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
-    runs-on: ubuntu-latest
+permissions:
+  contents: write
 
+env:
+  OUTPUT_FILE: merged_blocklist.txt
+  LOG_FILE: logs/merge_details.log
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: 3.12
 
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run merge script
-        run: python merge_hosts.py
-        env:
-          NGUON_URLS: ${{ vars.NGUON_URLS }}
+      - name: Merge blocklists from NGUON_URLS (from Actions Variables)
+        run: |
+          mkdir -p logs
+          echo "" > ${{ env.OUTPUT_FILE }}
+          echo "" > ${{ env.LOG_FILE }}
 
-      - name: Commit and push changes
+          echo "📥 Bắt đầu hợp nhất từ NGUON_URLS..." >> ${{ env.LOG_FILE }}
+
+          echo "${{ vars.NGUON_URLS }}" | while read -r url; do
+            echo "🔗 Đang xử lý: $url" >> ${{ env.LOG_FILE }}
+            curl -s "$url" | grep -E '^(0\.0\.0\.0|127\.0\.0\.1)[[:space:]]+[^# ]+' | awk '{print $2}' >> temp_hosts.txt || echo "❌ Lỗi tải $url" >> ${{ env.LOG_FILE }}
+          done
+
+          sort -u temp_hosts.txt > ${{ env.OUTPUT_FILE }}
+          echo "✅ Đã hợp nhất $(wc -l < ${{ env.OUTPUT_FILE }}) tên miền." >> ${{ env.LOG_FILE }}
+          rm -f temp_hosts.txt
+
+      - name: Commit & Push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add merged_blocklist.txt
-          git commit -m "🔄 Auto-merge blocklists [triggered]" || echo "No changes"
+          git add ${{ env.OUTPUT_FILE }} ${{ env.LOG_FILE }}
+          git commit -m "🔄 Auto-merge blocklists [triggered]" || echo "⚠️ Không có thay đổi để commit"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
