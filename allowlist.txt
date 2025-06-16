@@ -1,0 +1,22 @@
+# allowlist.txt
+# Danh sách các tên miền được cho phép hoạt động bình thường
+
+google.com
+youtube.com
+facebook.com
+linkedin.com
+github.com
+cdn.jsdelivr.net
+fonts.googleapis.com
+fonts.gstatic.com
+accounts.google.com
+mail.google.com
+drive.google.com
+apis.google.com
+firebase.google.com
+microsoft.com
+login.live.com
+office.com
+outlook.office365.com
+onedrive.live.com
+update.microsoft.com
