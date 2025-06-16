@@ -1,0 +1,42 @@
+name: Compare Blocklists
+
+on:
+  workflow_run:
+    workflows: ["Merge Blocklists"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: So sánh và tạo danh sách khác biệt
+        run: |
+          mkdir -p logs
+
+          if [[ -f merged_blocklist.txt && -f my-blocklist.txt ]]; then
+            sort merged_blocklist.txt > sorted_merged.txt
+            sort my-blocklist.txt > sorted_my.txt
+
+            comm -23 sorted_merged.txt sorted_my.txt > diff_from_merged.txt
+
+            echo "✅ Đã tìm thấy $(wc -l < diff_from_merged.txt) domain chỉ có trong merged_blocklist.txt"
+          else
+            echo "❌ Một trong hai file chưa tồn tại. Kiểm tra lại merge/export."
+            exit 1
+          fi
+
+      - name: Commit & Push kết quả
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add diff_from_merged.txt
+          git commit -m "🆕 Tự động tạo diff_from_merged.txt sau khi merge"
+          git push || echo "⚠️ Không có thay đổi để commit"
