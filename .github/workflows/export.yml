@@ -35,3 +35,6 @@ jobs:
           git add my-blocklist.txt logs/list_details.log
           git commit -m "Weekly update of blocklist and log from Cloudflare Gateway" || echo "No changes to commit"
           git push
+git add .github/workflows/export.yml
+git commit -m "Fix: use Python 3.12 instead of 3.1"
+git push
