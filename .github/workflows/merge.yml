@@ -1,0 +1,4 @@
+- name: Run merge script
+  run: python merge_hosts.py
+  env:
+    NGUON_URLS: ${{ vars.NGUON_URLS }}
