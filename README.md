@@ -1,28 +1,7 @@
-# ✨ Danh sách Lọc - ADHOST ✨
+## 📄 Danh sách lọc
 
-🔒 Một tập hợp các danh sách lọc được quản lý bởi cộng đồng — phục vụ cho việc chặn quảng cáo, bảo vệ quyền riêng tư và cải thiện trải nghiệm duyệt web.
-
----
-
-## 📂 Danh sách chính
-
-| Tên danh sách        | Liên kết trực tiếp                                                                 |
-|----------------------|-------------------------------------------------------------------------------------|
-| ✅ **ALLOWLIST**       | [📄 Xem allowlist.txt](https://github.com/Tuantm90/adhost/blob/main/allowlist.txt)         |
-| 🚫 **BLOCK PLUS NEXT** | [📄 Xem blockplusnext.txt](https://github.com/Tuantm90/adhost/blob/main/blockplusnext.txt) |
-| 🧱 **BACKUP BLOCK**    | [📄 Xem backupblock.txt](https://github.com/Tuantm90/adhost/blob/main/backupblock.txt)     |
-
----
-
-## 🛠 Mục đích sử dụng
-
-- Chặn các tên miền quảng cáo, theo dõi và độc hại.
-- Cho phép một số tên miền cần thiết hoạt động bình thường.
-- Làm danh sách dự phòng để xử lý trong các trường hợp đặc biệt.
-
----
-
-> 📌 Được cập nhật và bảo trì định kỳ.  
-> 📬 Góp ý, thêm domain mới? Hãy tạo [issue](https://github.com/Tuantm90/adhost/issues) hoặc pull request!
-
----
+| Danh sách          | Xem trên GitHub | Link trực tiếp (raw) |
+|--------------------|------------------|------------------------|
+| ✅ ALLOWLIST        | [Xem](https://github.com/Tuantm90/adhost/blob/main/allowlist.txt) | [Raw](https://raw.githubusercontent.com/Tuantm90/adhost/main/allowlist.txt) |
+| 🚫 BLOCK PLUS NEXT | [Xem](https://github.com/Tuantm90/adhost/blob/main/blockplusnext.txt) | [Raw](https://raw.githubusercontent.com/Tuantm90/adhost/main/blockplusnext.txt) |
+| 🧱 BACKUP BLOCK     | [Xem](https://github.com/Tuantm90/adhost/blob/main/backupblock.txt) | [Raw](https://raw.githubusercontent.com/Tuantm90/adhost/main/backupblock.txt) |
