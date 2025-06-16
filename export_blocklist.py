@@ -2,7 +2,7 @@ import requests
 import os
 import subprocess
 
-API_TOKEN = os.getenv("p2YMJoSTRKWwALSvBoKQNNjc7SkLLsWIQwZ-Q_WU")
+API_TOKEN = os.getenv("CF_API_TOKEN")
 ACCOUNT_ID = "ee2cf540f158ad97275ca8c4fb55cca6"  # 👈 THAY bằng Account ID của bạn
 BASE_URL = f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/gateway/lists"
 HEADERS = {
