@@ -1,9 +1,9 @@
-0.0.0.0 invl.me
-0.0.0.0 invl.io
-0.0.0.0 dns.storecake.io
-0.0.0.0 dns.webcake.io
-0.0.0.0 dns.ladipage.com
-0.0.0.0 ep7.facebook.com
-0.0.0.0 p2.facebook.com
-0.0.0.0 connect.facebook.com
-0.0.0.0 connect.facebook.net
+invl.me
+invl.io
+dns.storecake.io
+dns.webcake.io
+dns.ladipage.com
+ep7.facebook.com
+p2.facebook.com
+connect.facebook.com
+connect.facebook.net
