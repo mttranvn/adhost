@@ -28,9 +28,11 @@ jobs:
           python-version: 3.12
 
       - name: Install dependencies
-        run: pip install requests
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq
+          pip install requests
 
-      - name: Merge blocklists from NGUON_URLS (Actions Variables)
+      - name: Merge blocklists from NGUON_URLS
         run: |
           mkdir -p logs
           echo "" > ${{ env.OUTPUT_FILE }}
@@ -38,15 +40,18 @@ jobs:
 
           echo "📥 Bắt đầu hợp nhất từ NGUON_URLS..." >> ${{ env.LOG_FILE }}
 
-          IFS=$'\n'
-          echo "${{ vars.NGUON_URLS }}" | while read -r url; do
+          urls=$(echo '${{ toJSON(vars.NGUON_URLS) }}' | jq -r '. | split("\n")[]')
+          count=0
+
+          for url in $urls; do
             [ -z "$url" ] && continue
             echo "🔗 Đang xử lý: $url" >> ${{ env.LOG_FILE }}
-            curl -sL "$url" | grep -vE '^\s*#|^\s*$' | awk '
-              /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+[[:space:]]+/ { print $2 }
-              /^[a-zA-Z0-9.-]+$/ { print $0 }
-            ' >> temp_hosts.txt || echo "❌ Lỗi tải $url" >> ${{ env.LOG_FILE }}
+            curl -sL "$url" | grep -vE '^\s*#|^\s*$' | sed 's/#.*//' | sed 's/^[ \t]*//;s/[ \t]*$//' >> temp_hosts.txt \
+              && count=$((count + 1)) \
+              || echo "❌ Lỗi tải $url" >> ${{ env.LOG_FILE }}
           done
+
+          echo "✅ Đã xử lý $count URL." >> ${{ env.LOG_FILE }}
 
           grep -vE '^(localhost|broadcasthost|::1)$' temp_hosts.txt | sort -u > ${{ env.OUTPUT_FILE }}
           echo "✅ Đã hợp nhất $(wc -l < ${{ env.OUTPUT_FILE }}) tên miền." >> ${{ env.LOG_FILE }}
@@ -57,5 +62,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add ${{ env.OUTPUT_FILE }} ${{ env.LOG_FILE }}
-          git commit -m "🔄 Auto-merge blocklists [triggered]" || echo "⚠️ Không có thay đổi để commit"
+          git diff --cached --quiet || git commit -m "🔄 Auto-merge blocklists [triggered]"
           git push
