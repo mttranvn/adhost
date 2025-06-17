@@ -1,3 +1,35 @@
+name: Merge Blocklists
+
+on:
+  workflow_run:
+    workflows: ["Export Lists to my-blocklist.txt"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  OUTPUT_FILE: merged_blocklist.txt
+  LOG_FILE: logs/merge_details.log
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+
+      - name: Install dependencies
+        run: pip install requests
+
       - name: Merge blocklists from NGUON_URLS (Actions Variables)
         run: |
           mkdir -p logs
@@ -5,7 +37,7 @@
           echo "" > ${{ env.LOG_FILE }}
 
           echo "📥 Bắt đầu hợp nhất từ NGUON_URLS..." >> ${{ env.LOG_FILE }}
-          
+
           IFS=$'\n'
           echo "${{ vars.NGUON_URLS }}" | while read -r url; do
             [ -z "$url" ] && continue
@@ -16,8 +48,14 @@
             ' >> temp_hosts.txt || echo "❌ Lỗi tải $url" >> ${{ env.LOG_FILE }}
           done
 
-          # Lọc bỏ các domain không mong muốn (tuỳ chỉnh thêm nếu cần)
           grep -vE '^(localhost|broadcasthost|::1)$' temp_hosts.txt | sort -u > ${{ env.OUTPUT_FILE }}
-
           echo "✅ Đã hợp nhất $(wc -l < ${{ env.OUTPUT_FILE }}) tên miền." >> ${{ env.LOG_FILE }}
           rm -f temp_hosts.txt
+
+      - name: Commit & Push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ${{ env.OUTPUT_FILE }} ${{ env.LOG_FILE }}
+          git commit -m "🔄 Auto-merge blocklists [triggered]" || echo "⚠️ Không có thay đổi để commit"
+          git push
