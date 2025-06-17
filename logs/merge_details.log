@@ -1,14 +1,14 @@
 
 📥 Bắt đầu hợp nhất từ NGUON_URLS...
-🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/pro.plus.txt
-🔗 Đang xử lý: https://github.com/bigdargon/hostsVN/raw/master/hosts
-🔗 Đang xử lý: https://raw.githubusercontent.com/Tuantm90/adhost/main/blockplusnext.txt
-🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.tiktok.extended.txt
-🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.amazon.txt
-🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.apple.txt
-🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.winoffice.txt
-🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.samsung.txt
-🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.lgwebos.txt
-🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.roku.txt
-🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.xiaomi.txt
-✅ Đã hợp nhất 478 tên miền.
+🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.plus-onlydomains.txt
+🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.amazon.txt
+🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.apple.txt
+🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.winoffice.txt
+🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.samsung.txt
+🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.tiktok.extended.txt
+🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.lgwebos.txt
+🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.roku.txt
+🔗 Đang xử lý: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.xiaomi.txt
+🔗 Đang xử lý: https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/domain.txt
+✅ Đã xử lý 10 URL.
+✅ Đã hợp nhất 18753 tên miền.
