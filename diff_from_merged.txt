@@ -1855,6 +1855,7 @@ catalog.qc.coccoc.com
 catalyst.breaktime.com.tw
 cb-api-eu.maxymiser.com
 cb.mopub.com
+cb.snoozyhayride.com
 cbanners.virtuagirlhd.com
 cbslnk.cbsileads.com
 cc.adspsp.com
@@ -2520,6 +2521,7 @@ co.vaicore.store
 co.vaicore.xyz
 co.vlancaa.fun
 co.vlancaa.site
+coawujobups.com
 cobundle.gumgum.com
 code.adtlgc.com
 code.beaverads.com
@@ -6061,6 +6063,7 @@ rgaudit.1rx.io
 rgthrottle.1rx.io
 rh.otnolatrnup.com
 rhea-cache.advividnetwork.com
+rhiowzaht.com
 rhythmanalytics.1rx.io
 rj.a-mo.net
 rj.gssprt.jp
@@ -6681,6 +6684,7 @@ sjepm.adsafeprotected.com
 sjs.bizographics.com
 skadnetworks.fyber.com
 skadsdk.appsflyer.com
+skadsdk.appsflyersdk.com
 skinkexchange.fs.ak-is2.net
 sl.alcmpn.com
 slack-in.advangelists.com
