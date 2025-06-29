@@ -169,6 +169,7 @@ ad-monitor.kargo.com
 ad-specs.guoshipartners.com
 ad-spire.genieesspv.jp
 ad-tag.inner-active.mobi
+ad-track.adiiix.com
 ad.1rx.io
 ad.360in.com
 ad.360yield.com
@@ -605,6 +606,7 @@ adsrvmedia.adk2x.com
 adst.djaxadserver.com
 adstartmedia.g2afse.com
 adstat.4u.pl
+adstats.fastadsonline.com
 adstmanger.djaxadserver.com
 adstract.adk2x.com
 adstrategy.biz.weibo.com
@@ -656,6 +658,7 @@ advideo.dsp.yandexadexchange.net
 advideo.movad.net
 advideo.uimserv.net
 advm.brznetwork.com
+advmanager.techfun.pl
 advs.brznetwork.com
 adware.mavq.net
 adwin.lsosad.com
@@ -1034,7 +1037,6 @@ api.ampiri.com
 api.amplitude.com
 api.anythinktech.com
 api.appcloudbox.net
-api.appier.xyz
 api.applifier.com
 api.applovefrom.com
 api.appnext.com
@@ -1116,6 +1118,7 @@ api.mobio.vn
 api.mobula.ds.duapps.com
 api.mobula.sd.duapps.com
 api.mobula.sdk.duapps.com
+api.myadsget.com
 api.newsmaxfeednetwork.com
 api.omnitagjs.com
 api.onaudience.com
@@ -1247,6 +1250,7 @@ app.exponential.com
 app.freshmarketer.com
 app.gammaplatform.com
 app.gumgum.com
+app.haraloyalty.com
 app.indoleads.com
 app.marketo.com
 app.mobio.vn
@@ -1507,9 +1511,11 @@ bam-8.nr-data.net
 bam-9.nr-data.net
 bam.eu01.nr-data.net
 bam.nr-data.net
+banner.ambercoastcasino.com
 banner.ateam-ad.jp
 banner.brand.zing.vn
 banner.fyber.com
+banner.goldenpalace.com
 banner.lavanetwork.net
 banner.novanet.vn
 banners.adultfriendfinder.com
@@ -2046,7 +2052,6 @@ cdn.districtm.ca
 cdn.districtm.io
 cdn.doublemax.net
 cdn.doubleverify.com
-cdn.easyads28.mobi
 cdn.engine.4dsply.com
 cdn.engine.phn.doublepimp.com
 cdn.engine.spotscenered.info
@@ -2132,6 +2137,7 @@ cdn.myad.vn
 cdn.nanda.vn
 cdn.navdmp.com
 cdn.netcatx.com
+cdn.nextadgem.com
 cdn.o-s.io
 cdn.o333o.com
 cdn.oem.inmobi.net
@@ -2521,7 +2527,6 @@ co.vaicore.store
 co.vaicore.xyz
 co.vlancaa.fun
 co.vlancaa.site
-coawujobups.com
 cobundle.gumgum.com
 code.adtlgc.com
 code.beaverads.com
@@ -3236,7 +3241,6 @@ ecn.adflex.vn
 ecs1.engageya.com
 edayo.boost-next.co.jp
 edba.brealtime.com
-edg.appier.xyz
 edge-west.customer.io
 edge.ad1x.com
 edge.addthis.com
@@ -3351,6 +3355,7 @@ event-staging.inner-active.mobi
 event.2performant.com
 event.adbrix.io
 event.adpia.vn
+event.dfinery.io
 event.getblue.io
 event.havasedge.com
 event.inner-active.mobi
@@ -3682,6 +3687,7 @@ go.mediaz.vn
 go.mmstat.com
 go.mnaspm.com
 go.mobpartner.mobi
+go.mobytrks.com
 go.mouseflow.com
 go.onclasrv.com
 go.openx.com
@@ -3780,6 +3786,7 @@ hb.improvedigital.com
 hb.mediafuse.com
 hb.minutemedia-prebid.com
 hb.nexage.com
+hb.openwebmp.com
 hb.publift.com
 hb.pubmatic.com
 hb.undertone.com
@@ -4266,9 +4273,7 @@ jadserve.postrelease.com
 jaeger.vungle.com
 jcdn.ad-stir.com
 jenkins.appboy.com
-jenkins.bam-x.com
 jenkins.younetmedia.com
-jenkins2.bam-x.com
 jg.wensixuetang.com
 jgl.microad.net
 jill.fc.yahoo.com
@@ -4389,6 +4394,7 @@ kakaotalk.ad.kakaocorp.com
 kalturaevent.1rx.io
 kb.display.ad.daum.net
 kds-pixel.kargo.com
+ke.minterhazes.com
 keitaro1.cityads.com
 keymaker.go.sonobi.com
 keyword.ad.daum.net
@@ -4513,10 +4519,8 @@ livechat.oncustomer.asia
 liveramp.sync.go.sonobi.com
 lkm-admin.trafficfactory.biz
 ll.zucks.net
-llzv.lzazqroyklozv.top
 lm.a8.net
 lm.serving-sys.com
-lmajm.lbylqerzmzlzq.top
 ln.gamesrevenue.com
 load-use1.exelator.com
 load.exelator.com
@@ -4991,6 +4995,7 @@ nativeplaybook.triplelift.com
 navigator.mediarithmics.com
 nc.gdt.qq.com
 nc.pubpowerplatform.io
+ndtnc.abimimojo2.com
 nebula.im-apps.net
 neo.go.sonobi.com
 nep-west.advangelists.com
@@ -5152,7 +5157,6 @@ opt.proadscdn.com
 opt.ximad.com
 opt.yieldlove.com
 optchk.ayads.co
-optimidea.gotrackier.com
 optimize.adpushup.com
 optimize.innity.com
 optimize.urekamedia.com
@@ -6004,9 +6008,11 @@ report.novaon.asia
 report.pro-market.net
 report.woodpeckerlog.com
 reportcentral.doubleclick.net
+reporting-api.gannettinnovation.com
 reporting-stvde.adsafety.net
 reporting.aatkit.com
 reporting.bidtellect.com
+reporting.cdndex.io
 reporting.ligatus.com
 reporting.linkshare.com
 reporting.specificmedia.com
@@ -6063,7 +6069,6 @@ rgaudit.1rx.io
 rgthrottle.1rx.io
 rh.otnolatrnup.com
 rhea-cache.advividnetwork.com
-rhiowzaht.com
 rhythmanalytics.1rx.io
 rj.a-mo.net
 rj.gssprt.jp
@@ -6565,7 +6570,6 @@ server.adform.net
 server.asianmedia.com
 server.cpmstar.com
 server.ethicalads.io
-serversidestats.instant.page
 servg.modoro360.com
 servg.playstream.media
 servg.selectmedia.asia
@@ -6933,7 +6937,6 @@ staging.adswizz.com
 staging.api.adtimaserver.vn
 staging.applifier.com
 staging.appnexus.com
-staging.bam-x.com
 staging.blog.adblade.com
 staging.campaign.ateam-ad.jp
 staging.corp.evidon.com
@@ -7353,7 +7356,6 @@ t.doublemax.net
 t.dsp-prod.demandbase.com
 t.dtscdn.com
 t.dtscout.com
-t.easyads28.mobi
 t.eclick.vn
 t.effectivemeasure.net
 t.everestop.io
@@ -7470,6 +7472,7 @@ tapi.onthe.io
 targeting.focas.jp
 targeting.unrulymedia.com
 targeting.washpost.nile.works
+tb.baimgfroggd.site
 tcheck.outbrainimg.com
 tcimp.zog.link
 tcr.tynt.com
@@ -7691,6 +7694,7 @@ tracking.lenzmx.com
 tracking.m6r.eu
 tracking.mellowads.com
 tracking.meta.vn
+tracking.monsido.com
 tracking.newsmaxfeednetwork.com
 tracking.omnitagjs.com
 tracking.onfluencer.net
