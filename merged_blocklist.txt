@@ -1143,6 +1143,7 @@ ads.allizom.org
 ads.alobacsi.vn
 ads.alphonso.tv
 ads.alt.com
+ads.amazon.dev
 ads.amdmb.com
 ads.amigos.com
 ads.amxrtb.com
@@ -1998,6 +1999,7 @@ advertiserurl.com
 advertisespace.com
 advertising-cdn.com
 advertising-cdn.dpgmedia.cloud
+advertising.amazon.dev
 advertising.com
 advertising.gammassp.com
 advertising.microsoft.com
@@ -2141,6 +2143,7 @@ aem-collector-22ylcwym.kgslb.com
 aem-collector.daumkakao.io
 aerodynomach.com
 aerserv.com
+aes.eu-west.ono.axp.amazon-adsystem.com
 aes.kargo.com
 aeventlog.beacon.qq.com
 aevents.izooto.com
@@ -2986,6 +2989,7 @@ api.gif.duapps.com
 api.glance.inmobi.com
 api.growingio.com
 api.iad.appboy.com
+api.imdb.eu-west-1.prod.paets.advertising.amazon.dev
 api.indexexchange.com
 api.inmobi.cn
 api.inspectlet.com
@@ -3469,7 +3473,14 @@ assets1.adroll.com
 assets1.exgfnetwork.com
 assistads.net
 asslfeqadv.com
+assoc-amazon.ca
+assoc-amazon.co.uk
 assoc-amazon.com
+assoc-amazon.de
+assoc-amazon.es
+assoc-amazon.fr
+assoc-amazon.it
+assoc-amazon.jp
 assoc-msdk-cn.amazon-adsystem.com
 assoc-msdk-eu.amazon-adsystem.com
 assoc-msdk-us.amazon-adsystem.com
@@ -4932,6 +4943,7 @@ cdn.postrelease.com
 cdn.premiumads.net
 cdn.premiumtag.net
 cdn.proadscdn.com
+cdn.prod.metrics.imdb.a2z.com
 cdn.prod.uidapi.com
 cdn.promotionengine.com
 cdn.pubexchange.com
@@ -4999,6 +5011,7 @@ cdn.tenmax.io
 cdn.tpmedia.online
 cdn.trackjs.com
 cdn.tradplusad.com
+cdn.traffic60s.xyz
 cdn.trafficbass.com
 cdn.trafficfactory.biz
 cdn.trafficstars.com
@@ -5426,6 +5439,7 @@ client.vads.net.vn
 client2.otm-r.com
 clientcdn.pushengage.com
 clientinfo.phimmoizz.net
+clientlogger.marketplace.aws.a2z.com
 clientmanagement.lijit.com
 clientmetrics-pa.googleapis.com
 clientmetrics.outbrain.com
@@ -7454,6 +7468,7 @@ fam.adingo.jp
 familiarpyromaniasloping.com
 faq.juicer.cc
 faqirsgoliard.top
+faqlikbid.com
 farcivinage.shop
 farethief.com
 farmergoldfish.com
@@ -7708,6 +7723,7 @@ futuristicapparatus.com
 futuristicfairies.com
 fuwalrnce.com
 fvalid.appsflyer.com
+fvchjvaiisuxrpb.com
 fw.adsafeprotected.com
 fw.bapi.adsafeprotected.com
 fw.moatads.com
@@ -8504,6 +8520,7 @@ hsadspixel.net
 hsbarbershop.co.uk
 hscozgoqffn.com
 hscta.net
+hsestonicaawofw.com
 hsych.com
 ht.alcmpn.com
 ht.indexww.com
@@ -9489,6 +9506,7 @@ kau.li
 kauleeci.com
 kaulouvaun.com
 kaurieseluxate.com
+kautefaunenit.net
 kb.display.ad.daum.net
 kcaapxanwv.com
 kcgkiumubea.com
@@ -10450,6 +10468,7 @@ mauzanapsusi.net
 mavericks.marketo.com
 mavq.net
 mawlaybob.com
+mawptuaz.com
 max.i12.de
 maxgid.com
 maximumcash.com
@@ -10680,6 +10699,7 @@ metrics.data.hicloud.com
 metrics.foxnews.com
 metrics.govexec.com
 metrics.icloud.com
+metrics.imdb.a2z.com
 metrics.kmsmep.com
 metrics.linkshare.com
 metrics.m.ambientplatform.vn
@@ -10734,7 +10754,6 @@ millustry.top
 mimilcnf.pro
 mindlytix.com
 mindmemobile.com
-minerva.devices.a2z.com
 mingledventin.com
 minio.connatix.com
 minotaur107.com
@@ -10953,6 +10972,7 @@ msg.umengcloud.com
 msga.cupid.iqiyi.com
 msgapp.com
 msgose.com
+msincsayqmji.com
 msn.serving-sys.com
 mstorer.net
 mstr.sharethrough.com
@@ -10979,6 +10999,7 @@ multilinkhost.com
 munchenviableski.com
 munchkin.marketo.net
 murkymouse.online
+murozwuddtow.com
 mushroomreclaimschnapps.com
 musiccounter.ru
 musr.navdmp.com
@@ -11286,6 +11307,7 @@ nppmwatch.com
 nps.juicer.cc
 npttech.com
 npv.indexexchange.com
+nqcgdvuuyxwj.com
 nqucjilr.com
 nr-data.net
 nr-events.taboola.com
@@ -13088,6 +13110,7 @@ qwykgrylxyl.com
 qxadsk.com
 qzeavzrfaoqn.com
 qzs.gdtimg.com
+qzyztuwulo.com
 r-ad.ne.jp
 r-eu.tsyndicate.com
 r-log.dable.io
@@ -14524,6 +14547,7 @@ sjedt.adsafeprotected.com
 sjepm.adsafeprotected.com
 sjremetrics.java.com
 sjs.bizographics.com
+sjvaovqhn.com
 skadnetwork.singular.net
 skadnetworks.fyber.com
 skadsdk.appsflyer.com
@@ -14626,6 +14650,7 @@ snebbubbled.com
 snigelweb.com
 snippets-codes.creativecdn.com
 snippets-fallback.creativecdn.com
+snitzsauteur.shop
 snnd.co
 snoobi.com
 snoopytool.outbrain.com
@@ -16547,6 +16572,7 @@ trustx.org
 trx.adscale.de
 try.abtasty.com
 ts.alcmpn.com
+ts.amazon-adsystem.com
 ts.siteimprove.com
 tshfc.com
 tsis.jpush.cn
@@ -16835,7 +16861,6 @@ us-content.mediaforge.com
 us-east-1.event.prod.bidr.io
 us-east-1.prod.pr.analytics.console.aws.a2z.com
 us-east-1.prod.pw.analytics.console.aws.a2z.com
-us-east-1.prod.service.minerva.devices.a2z.com
 us-east-1.rtb.a-mo.net
 us-east-1.telemetry.insights.video.a2z.com
 us-east-2.prod.pr.analytics.console.aws.a2z.com
@@ -17660,6 +17685,7 @@ wonderlandads.com
 wondoads.de
 woochithoothie.net
 woodpeckerlog.com
+woomerapapacy.shop
 woopra.com
 woorucauhou.net
 wootric-demo.wootric.com
@@ -18415,6 +18441,7 @@ wxadliteapp.gdt.qq.com
 wxapi.growingio.com
 wyhifdpatl.com
 wynvalur.com
+wywtpkeai.com
 wz.tynt.com
 wzrkt.com
 x-traceur.com
