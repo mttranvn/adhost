@@ -438,7 +438,6 @@ ads.casumoaffiliates.com
 ads.cdnaz.win
 ads.celtra.com
 ads.centraliprom.com
-ads.clickdigisol.net
 ads.colombiaonline.com
 ads.contentabc.com
 ads.contextweb.com
@@ -720,6 +719,7 @@ adyoulike.omnitagjs.com
 ae.alcmpn.com
 ae.brand-display.com
 ae.pubmatic.com
+aes.eu-west.ono.axp.amazon-adsystem.com
 aes.kargo.com
 aeventlog.beacon.qq.com
 aevents.izooto.com
@@ -1095,6 +1095,7 @@ api.gif.duapps.com
 api.glance.inmobi.com
 api.growingio.com
 api.iad.appboy.com
+api.imdb.eu-west-1.prod.paets.advertising.amazon.dev
 api.indexexchange.com
 api.inmobi.cn
 api.inspectlet.com
@@ -2161,6 +2162,7 @@ cdn.postrelease.com
 cdn.premiumads.net
 cdn.premiumtag.net
 cdn.proadscdn.com
+cdn.prod.metrics.imdb.a2z.com
 cdn.prod.uidapi.com
 cdn.promotionengine.com
 cdn.pubexchange.com
@@ -6074,9 +6076,7 @@ rj.a-mo.net
 rj.gssprt.jp
 rlog.popin.cc
 rmax.tenmax.io
-rmmjy.rrbzvmklrzwmk.top
 rmp.1rx.io
-rmvla.rrqwarwrewrlj.top
 rnd.novanet.vn
 rock.defybrick.com
 roimedia.advertserve.com
@@ -7694,7 +7694,6 @@ tracking.lenzmx.com
 tracking.m6r.eu
 tracking.mellowads.com
 tracking.meta.vn
-tracking.monsido.com
 tracking.newsmaxfeednetwork.com
 tracking.omnitagjs.com
 tracking.onfluencer.net
@@ -7734,6 +7733,7 @@ trk.clinch.co
 trk.eskimi.com
 trk.indoleads.com
 trk.staging.123c.vn
+trk.trk4u.com
 trk.xapads.com
 trkdev.indoleads.com
 truenorth.localytics.com
@@ -7854,7 +7854,6 @@ us-adsrv.rtbsuperhub.com
 us-central.load.exelator.com
 us-content.mediaforge.com
 us-east-1.event.prod.bidr.io
-us-east-1.prod.service.minerva.devices.a2z.com
 us-east-1.rtb.a-mo.net
 us-east-1.telemetry.insights.video.a2z.com
 us-east-ad-track.aralego.com
@@ -8944,7 +8943,6 @@ www.xadsmart.com
 www.xapads.com
 www.xmlppcbuzz.com
 www.xoom-ads.com
-www.xumamropnox.com
 www.yeah1publishing.com
 www.yieldlab.net
 www.yieldlove.com
