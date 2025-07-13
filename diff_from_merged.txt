@@ -4435,6 +4435,7 @@ l.contentsquare.net
 l.d.eclick.vn
 l.doubleclick.net
 l.everesttech.net
+l.flat-ads.com
 l.logly.co.jp
 l.logrocket.io
 l.onfluencer.net
@@ -6610,6 +6611,7 @@ settings.crashlytics.com
 settings.luckyorange.net
 sf.nazs.socdm.com
 sf.vserv.mobi
+sf16-static.i18n-pglstatp.com
 sftp.criteo.com
 sfw.adsafeprotected.com
 sg-config.sensic.net
